@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farzi Cafe</title>
+    <link rel="stylesheet" href="css/farzi.css">
+    <link rel="stylesheet" href="js/farzi.js">
+</head>
+<body>
+
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+       
+            <div class="menu-items">
+                <!-- Menu Items -->
+                <div class="menu-item">
+                    <img src="photos/farzi1.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/farzi2.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/farzi3.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/farzi4.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/farzi5.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/farzi6.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/farzi7.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/farzi8.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/farzi9.jpg" alt="Classic Coffee">
+                      </div>
+                
+            </div>
+        </div>
+    </section>
+    
+ 
+    <script>
+           
+        function goBack() {
+            window.location.href = "farzi1.html";
+        }
+    </script>
+    <!-- Back Button -->
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="goBack()" style="padding: 10px 20px; font-size: 20px; cursor: pointer;">Back</button>
+    </div>
+
+    <script>
+        // Function to open the popup
+        function openPopup(card) {
+            var imageSrc = card.querySelector('img').src;
+            document.getElementById("popup-img").src = imageSrc;
+            document.getElementById("popup-modal").style.display = "flex";
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById("popup-modal").style.display = "none";
+        }
+
+        // Function to go back to loc1.html
+        function goBack() {
+            window.location.href = "farzi1.html";
+        }
+    </script>
+
+
+</body>
+</html>

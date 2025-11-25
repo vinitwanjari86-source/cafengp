@@ -1,0 +1,174 @@
+<?
+session_start()
+?>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nagpur's Best Café</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f5f2;
+            color: #d01111;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #1c4003c9, #f4b400);
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        .about-section h2 {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-section p {
+            font-size: 18px;
+            color: #fff;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+
+        .about-icons {
+            margin-top: 20px;
+        }
+
+        .about-icons i {
+            font-size: 28px;
+            color: #fff;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .about-icons i:hover {
+            transform: scale(1.2);
+        }
+
+        .about-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="about-section">
+        <h2>☕ Welcome to Our Café ☕</h2>
+        <p>
+            
+           <p>Bella Brew Café is a vibrant and contemporary eatery nestled in the bustling area of Dharampeth, Nagpur. Renowned for its eclectic menu and inviting ambiance, Bella Brew has established itself as a go-to destination for food enthusiasts seeking a blend of comfort and sophistication. The café specializes in Continental cuisine, offering a diverse range of dishes that cater to both vegetarians and non-vegetarians alike. 
+            
+            Ambience & Experience
+            
+            Situated at Plot No. 17, Ground Floor, Prabha Sadan, J.B. Thakkar Marg, Giripeth, Nagpur, Bella Brew boasts a modern yet cozy interior that exudes warmth and relaxation. The thoughtfully designed space features comfortable seating arrangements, ambient lighting, and tasteful décor, creating an atmosphere that is both chic and welcoming. Whether you're looking to enjoy a leisurely meal, catch up with friends, or find a quiet corner to work, Bella Brew provides the perfect setting for every occasion.</p><br>
+            
+            <p>Menu & Specialties
+            
+            Bella Brew's menu is a testament to its commitment to quality and innovation. The café offers a wide array of Continental dishes, each prepared with fresh ingredients and presented with flair. Some of the standout items include:
+            
+            Spicy Veggie Rice: A flavorful medley of fresh vegetables cooked in a bold and spicy sauce, served with rice. 
+            
+            Mezze Platter: A delightful assortment of hummus, falafel, pita, and veggies, offering a taste of Middle Eastern flavors. 
+            
+            Nutella Banana Waffle: A warm waffle topped with rich Nutella and fresh bananas, perfect for those with a sweet tooth. 
+            
+            Peanut Butter Protein Shake: A protein-packed shake blended with creamy peanut butter, ideal for a nutritious boost. 
+            
+            Lemon Iced Tea: A refreshing beverage with a zesty lemon twist, perfect for cooling down on a warm day.</p><br>
+            
+            
+           <p>In addition to these specialties, Bella Brew offers a variety of desserts, smoothies, iced teas, hot chocolates, and iced coffees, ensuring there's something to satisfy every palate. 
+            
+            Key Highlights
+            
+            Cuisine: Continental
+            
+            Average Cost: ₹450 for two people (approx.)</p><br> 
+            
+           <p>Facilities:
+            
+            Home Delivery: Enjoy Bella Brew's delectable offerings in the comfort of your home. 
+            
+            Vegetarian Options: A diverse selection of vegetarian dishes to cater to varied preferences. 
+            
+            Indoor Seating: Comfortable and stylish indoor seating arrangements for a relaxed dining experience. 
+            
+            Free Wi-Fi: Stay connected with complimentary internet access, making it an ideal spot for work or leisure. 
+            
+            Smoking Area: Designated smoking area available for guests. 
+            
+            Parking Available: Convenient parking facilities for patrons. 
+            
+            SwiggyPay Accepted: Hassle-free payments through SwiggyPay. </p>
+            <br>
+            
+            
+            
+           <p> Location & Contact
+            
+            Address: Plot No. 17, Ground Floor, Prabha Sadan, J.B. Thakkar Marg, Giripeth, Nagpur, Maharashtra, 440010 
+            
+            Phone: +91 8446081003 
+            
+            Timings: Open daily from 12:00 PM to 10:30 PM 
+            
+            
+            Bella Brew Café is committed to providing an exceptional dining experience that combines culinary excellence with a welcoming environment. Whether you're a local resident or a visitor to Nagpur, a meal at Bella Brew promises to be a delightful journey of flavors and comfort.</p>
+        
+        <div class="about-icons">
+            <i class="fas fa-coffee"></i>
+            <i class="fas fa-cookie-bite"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+                     <!-- Back Button -->
+                     <div style="text-align: center; margin-top: 20px;">
+                        <button onclick="goBack()" style="padding: 10px 20px; font-size: 20px; cursor: pointer;">Back</button>
+                    </div>
+                  
+                    <script>
+                        // Function to open the popup
+                        function openPopup(card) {
+                            var imageSrc = card.querySelector('img').src;
+                            document.getElementById("popup-img").src = imageSrc;
+                            document.getElementById("popup-modal").style.display = "flex";
+                        }
+                  
+                        // Function to close the popup
+                        function closePopup() {
+                            document.getElementById("popup-modal").style.display = "none";
+                        }
+                  
+                        // Function to go back to loc1.html
+                        function goBack() {
+                            window.location.href = "bellabrew1.html";
+                        }
+                    </script>
+    
+    </section>
+
+</body>
+</html>

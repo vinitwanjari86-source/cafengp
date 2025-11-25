@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HICHKI Cafe</title><br>
+    <link rel="stylesheet" href="css/hichki.css">
+</head>
+<body>
+
+ 
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+       
+            <div class="menu-items">
+                <!-- Menu Items -->
+                <div class="menu-item">
+                    <img src="photos/hic1.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/hic2.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/hic3.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/hic4.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/hic5.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/hic6.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/hic7.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/hic8.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/hic9.jpg" alt="Classic Coffee">
+                      </div>
+                
+            </div>
+        </div>
+    <!-- Back Button -->
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="goBack()" style="padding: 10px 20px; font-size: 20px; cursor: pointer;">Back</button>
+    </div>
+
+    <script>
+        // Function to open the popup
+        function openPopup(card) {
+            var imageSrc = card.querySelector('img').src;
+            document.getElementById("popup-img").src = imageSrc;
+            document.getElementById("popup-modal").style.display = "flex";
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById("popup-modal").style.display = "none";
+        }
+
+        // Function to go back to loc1.html
+        function goBack() {
+            window.location.href = "hitchki1.html";
+        }
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nagpur's Best Café</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f5f2;
+            color: #d01111;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #1c4003c9, #f4b400);
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        .about-section h2 {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-section p {
+            font-size: 18px;
+            color: #fff;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+
+        .about-icons {
+            margin-top: 20px;
+        }
+
+        .about-icons i {
+            font-size: 28px;
+            color: #fff;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .about-icons i:hover {
+            transform: scale(1.2);
+        }
+
+        .about-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="about-section">
+        <h2>☕ Welcome to Our Café ☕</h2>
+        <p>
+            
+            LOC Café, standing for "Life of Chai," is a celebrated café chain that has become synonymous with authentic tea experiences in Nagpur. With over 25 outlets across Nagpur and Vidarbha, LOC Café has established itself as a haven for tea enthusiasts and food lovers alike. 
+            
+            The Laxmi Nagar outlet embodies the brand's commitment to delivering exceptional tea and culinary delights. Strategically located in the vibrant neighborhood of Laxmi Nagar, this café offers a serene escape from the city's hustle and bustle, inviting patrons to relax and savor the moment.</p><br>
+
+            
+           <p> Menu & Specialties
+            
+            LOC Café's menu is a harmonious blend of traditional favorites and innovative creations, catering to a wide array of palates. While the café is renowned for its diverse tea offerings, it also boasts an impressive selection of beverages and food items that complement the chai experience.
+            
+            Beverages:
+            
+            Adrak Chai (Ginger Tea): A robust blend of black tea infused with fresh ginger, offering a spicy kick that's both invigorating and comforting.
+            
+            Elaichi Chai (Cardamom Tea): This aromatic tea combines the warmth of black tea with the sweet, floral notes of cardamom, resulting in a soothing beverage perfect for any time of day.
+            
+            Classic Hot Coffee: For coffee aficionados, the café serves a rich and smooth brew that provides a delightful alternative to tea.
+            
+            Hazelnut Coffee: A nutty twist on the classic, this coffee is infused with hazelnut flavors, offering a sweet and aromatic experience. </p><br>
+            
+            
+           <p>Key Highlights
+            
+            Youthful Ambience: The vibrant and inviting atmosphere makes it an ideal spot for individuals of all ages to unwind and connect.
+            
+            Authentic Taste: Each item on the menu is crafted with precision, ensuring that traditional flavors are preserved while introducing contemporary twists.
+            
+            Pocket-Friendly Menu: Delicious offerings are priced reasonably, allowing patrons to enjoy a variety of items without straining their budget.
+            
+            Open Kitchen: The transparent kitchen setup reflects the café's dedication to hygiene and allows guests to engage with the culinary process.
+            
+            Empowering Entrepreneurs: LOC Café is committed to fostering entrepreneurship by providing opportunities for individuals to operate their own outlets, thereby contributing to the local economy. </p><br>
+            
+            
+           <p>Location & Contact Information
+            
+            Address: Laxmi Nagar West, Nagpur, Maharashtra, 440022 
+            
+            Phone: +91 9752860225 
+            
+            Email: infolifeofchai@gmail.com</p> 
+            
+            
+        
+        <div class="about-icons">
+            <i class="fas fa-coffee"></i>
+            <i class="fas fa-cookie-bite"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+                     <!-- Back Button -->
+                     <div style="text-align: center; margin-top: 20px;">
+                        <button onclick="goBack()" style="padding: 10px 20px; font-size: 20px; cursor: pointer;">Back</button>
+                    </div>
+                  
+                    <script>
+                        // Function to open the popup
+                        function openPopup(card) {
+                            var imageSrc = card.querySelector('img').src;
+                            document.getElementById("popup-img").src = imageSrc;
+                            document.getElementById("popup-modal").style.display = "flex";
+                        }
+                  
+                        // Function to close the popup
+                        function closePopup() {
+                            document.getElementById("popup-modal").style.display = "none";
+                        }
+                  
+                        // Function to go back to loc1.html
+                        function goBack() {
+                            window.location.href = "loc1.html";
+                        }
+                    </script>
+    
+    </section>
+
+</body>
+</html>

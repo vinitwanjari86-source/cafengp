@@ -1,0 +1,396 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navigation Bar Styles */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo h1 {
+    color: #f2c94c;
+    font-size: 2rem;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #f2c94c;
+}
+
+/* Hero Section Styles */
+.hero {
+    height: 100vh;
+    background-image: url('farzi-cafe-bg.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    color: #f2c94c;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: #f2c94c;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #d9b346;
+}
+
+/* Menu Section Styles */
+.menu {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.menu .menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.menu .menu-item {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.menu .menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu .menu-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu .menu-item h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu .menu-item p {
+    color: #666;
+}
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.menu-card {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+/* Popup modal styles */
+.popup-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-modal img {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.popup-modal .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #bbb;
+}
+/* Footer Styles */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.footer {
+    background: #2b2b2b;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer h2 {
+    color: #f4b400;
+    margin-bottom: 15px;
+}
+
+.footer-about, .footer-links, .contact , .footer-follow-us{
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+}
+
+.footer-about p, .footer-contact p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: #f4b400;
+    transform: scale(1.1);
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #f4b400;
+}
+
+.footer-contact p i {
+    margin-right: 10px;
+    color: #f4b400;
+}
+
+.newsletter {
+    margin-top: 10px;
+    display: flex;
+}
+
+.newsletter input {
+    width: 70%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.newsletter button {
+    width: 30%;
+    background: #f4b400;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.newsletter button:hover {
+    background: #e89b00;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+.follow-us {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px 0;
+    background: #2b2b2b;
+    color: white;
+    border-top: 2px solid #f4b400;
+}
+
+.follow-us h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #f4b400;
+}
+
+.follow-us a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.follow-us a i {
+    margin-right: 8px;
+    font-size: 22px;
+}
+
+.follow-us a:hover {
+    color: #f4b400;
+    transform: scale(1.1);
+}
+
+

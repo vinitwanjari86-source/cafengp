@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HITCHKI Cafe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f1e5;
+            height: 1000px;
+        }
+        .header {
+            font-size: 50px;
+            font-weight: bold;
+            color: #d35400;
+            margin: 20px 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            height:1000px
+        }
+        .card {
+            width: 20%;
+            height: 750px;
+            padding: 10px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            
+        }
+        .card:hover {
+            transform: scale(1.1);
+        }
+        .card p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">---LOC CAFE---</div>
+    <div class="header">LIFE  OF  CHAI</div>
+    <br> 
+    <br>
+    <br>
+    <div class="container">
+        <div class="card" onclick="redirectToPage('LOC_ambiance.html')">
+            <img src="photos/amiance.jpg" alt="Ambiance">
+            <h3>Ambiance</h3>
+        </div>
+        
+        <div class="card" onclick="redirectToPage('LOC_menu.html')">
+            <img src="photos/menu22.jpg" alt="Menu">
+            <h3>Menu</h3>
+        </div>
+        <div class="card" onclick="redirectToPage('LOC_about.html')">
+            <img src="photos/about.jpg" alt="About">
+            <h3>About</h3>
+        </div>
+        <div class="card" onclick="redirectToPage('LOC_contact.html')">
+            <img src="photos/contact.jpg" alt="Contact">
+            <h3>Contact</h3>
+        </div>
+    </div>
+    
+    <script>
+        function redirectToPage(page) {
+            window.open(page, '_blank');
+        }
+    </script>
+     <!-- Back Button -->
+     <div style="text-align: center; margin-top: 20px;">
+        <button onclick="goBack()" style="padding: 10px 20px; font-size: 20px; cursor: pointer;">Back</button>
+    </div>
+
+    <script>
+        // Function to open the popup
+        function openPopup(card) {
+            var imageSrc = card.querySelector('img').src;
+            document.getElementById("popup-img").src = imageSrc;
+            document.getElementById("popup-modal").style.display = "flex";
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById("popup-modal").style.display = "none";
+        }
+
+        // Function to go back to loc1.html
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

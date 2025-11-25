@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Café Bliss</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8e7e3d3;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background: rgb(16, 92, 79);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .cafe-name {
+            font-size: 32px;
+            font-weight: bold;
+            color:  #f2c94c;
+        }
+        .contact-info {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .query-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            width: 80%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background:  #f2c94c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        button:hover {
+            background: #f2c94c;
+        }
+        .back-btn {
+            margin-top: 20px;
+            background: #ccc;
+            color: black;
+        }
+        .back-btn:hover {
+            background: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cafe-name"> Farzi Café Nagpur</div>
+        <div class="contact-info">
+            <p><strong>Location:</strong>Dharampeth Nagpur, Maharashtra</p>
+            <p><strong>Phone:</strong> +91   8600777666</p>
+            <p><strong>Email:</strong>@farzi.cafenagpur</p>
+        </div>
+        <h2>Submit Your Query</h2>
+        <form id="queryForm" class="query-form" action="farzi-cotact.php" method="post">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+            <textarea id="query" rows="4" name="comment" placeholder="Your Query" required></textarea>
+           
+            <div class="follow-us">
+                <h2>Follow Us</h2>
+                <a href="https://www.instagram.com/farzi.cafenagpur" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <img src="image.png" alt="" height="30px">
+                </a>
+            </div><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <button class="back-btn" onclick="goBack()">Back</button>
+    </div>
+    
+    <script>
+        
+        function goBack() {
+            window.location.href = "farzi1.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nagpur's Best Café</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f5f2;
+            color: #d01111;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #1c4003c9, #f4b400);
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        .about-section h2 {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-section p {
+            font-size: 18px;
+            color: #fff;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+
+        .about-icons {
+            margin-top: 20px;
+        }
+
+        .about-icons i {
+            font-size: 28px;
+            color: #fff;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .about-icons i:hover {
+            transform: scale(1.2);
+        }
+
+        .about-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="about-section">
+        <h2>☕ Welcome to Our Café ☕</h2>
+        <p>
+            
+
+            Farzi Café Nagpur
+
+            About Us
+            
+            Farzi Café Nagpur is a modern Indian bistro that redefines the dining experience by blending traditional Indian flavors with innovative culinary techniques. The restaurant is known for its unique fusion dishes, artistic presentation, and a vibrant atmosphere, making it a favorite spot for food lovers and social gatherings.
+            
+            Ambience & Experience
+            
+            The café features a sleek, contemporary design with an open kitchen concept, allowing guests to witness the magic behind their meals. Whether you're looking for a cozy dinner, a lively night out, or a special celebration, Farzi Café provides the perfect ambiance with its energetic vibe, live music, and aesthetic interiors.
+            
+            Menu & Specialties
+            
+            Farzi Café offers a diverse menu that includes:
+            
+            Indian Fusion Cuisine: A mix of North Indian and modern flavors.
+            
+            Bar Food & Pizza: Signature dishes with a gourmet twist.
+            
+            Innovative Cocktails & Mocktails: Crafted by expert mixologists.
+            
+            
+            The restaurant is also known for its molecular gastronomy techniques, adding a theatrical element to the dining experience.<br>
+            
+            <p>Key Highlights
+            
+            ✔ Full Bar Available
+            ✔ Live Sports Screening
+            ✔ Romantic Dining Ambiance
+            ✔ Valet Parking
+            ✔ Indoor Seating</p><br>
+            
+            <p>Location & Contact
+            
+            📍 Address: 236, 9th Floor, West High Building, WHC Road, Dharampeth, Nagpur
+            💰 Average Cost: ₹3,000 for two people (approx.) with alcohol
+            
+            For reservations and more details, visit Zomato or contact the café directly.
+            
+            Farzi Café Nagpur is the perfect destination for those who love great food, creative drinks, and an unforgettable dining experience.</p>
+        
+        <div class="about-icons">
+            <i class="fas fa-coffee"></i>
+            <i class="fas fa-cookie-bite"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+                     <!-- Back Button -->
+                     <div style="text-align: center; margin-top: 20px;">
+                        <button onclick="goBack()" style="padding: 10px 20px; font-size: 20px; cursor: pointer;">Back</button>
+                    </div>
+                  
+                    <script>
+                        // Function to open the popup
+                        function openPopup(card) {
+                            var imageSrc = card.querySelector('img').src;
+                            document.getElementById("popup-img").src = imageSrc;
+                            document.getElementById("popup-modal").style.display = "flex";
+                        }
+                  
+                        // Function to close the popup
+                        function closePopup() {
+                            document.getElementById("popup-modal").style.display = "none";
+                        }
+                  
+                        // Function to go back to loc1.html
+                        function goBack() {
+                            window.location.href = "farzi1.html";
+                        }
+                    </script>
+    
+    </section>
+
+</body>
+</html>

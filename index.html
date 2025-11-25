@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagpur's Best Cafe</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Nagpur's Best Cafe</h1>
+            </div>
+            <div>
+                <form class="search-form" onsubmit="searchCafe(event)">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Search..." name="search" class="search-input">
+                        <i class="fa fa-search search-icon"></i>
+                    </div>
+                </form>
+                
+                <!-- FontAwesome for the search icon -->
+                <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+                
+                
+               
+                </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Cafe's</a></li>
+                <li><a href="abutus.html">About Us</a></li>
+                <li><a href="contact.html">Feedback</a></li>
+                <li><a href="sign_up.php">Sign-Up</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function searchCafe(event) {
+            event.preventDefault(); // Prevents form submission
+    
+            // Get search input value
+            let query = document.getElementById("search-input").value.toLowerCase().trim();
+    
+            // Define available cafes and their corresponding pages
+            let cafes = {
+                "farzi": "farzi1.html",
+                "loc": "loc1.html",
+                "hitchki": "hitchki1.html",
+                "dabo": "dabo1.html",
+                "bella": "bellabrew1.html",
+               "villa 167":"https://g.co/kgs/m48RV3J",
+                "little owl cafe": "https://linktr.ee/littleowlcafe",
+                "cocktails & socials":"https://cocktailsandsocials.com/",
+                "turkish cafe":"https://www.google.com/search?client=ms-android-oppo-rvo3&sca_esv=b96c0f9f157b9df3&hl=en-GB&cs=1&sxsrf=AHTn8zpzrMi7oDP4NCFTuExD0tKMRuwnuA:1739442072153&kgmid=/g/11t_kfl21x&q=Turkish+house&shndl=30&source=sh/x/loc/act/m1/4&kgs=5c6267f4824a5708",
+                "oh no cafe":"https://www.google.com/search?client=ms-android-oppo-rvo3&sca_esv=b96c0f9f157b9df3&hl=en-GB&cs=1&sxsrf=AHTn8zosC_NrJeWkKYNlRaiZn5NNujPpfg:1739442127202&kgmid=/g/11kqdsyb75&q=OHNO&shndl=30&source=sh/x/loc/act/m1/4&kgs=0ade84bfb95aa3cd",
+                "the belgian waffle":"https://thebelgianwaffle.co/",
+                "raasta cafe":"https://raastanagpur.com/",
+                "barbeque nation":"https://www.barbequenation.com/restaurants/nagpur/eternity-mall?utm_source=GMB&utm_medium=nagpur_eternity_mall&utm_campaign=GMB_nagpur_eternity_mall",
+                "starbucks":"https://tsb-stores.starbucksindia.net/starbucks-dharampeth-coffee-shop-shivaji-nagar-nagpur-283382/Home?utm_source=locator&utm_medium=googleplaces",
+                "three beans":"https://www.google.com/search?client=ms-android-oppo-rvo3&sa=X&bih=690&hl=en-GB&biw=360&cs=1&sca_esv=b96c0f9f157b9df3&sxsrf=AHTn8zoGXewOoNVmo5XbREaCphDz0Ne9Mw:1739443333484&kgmid=/g/11jj36f_l5&q=Three+Beans+Coffee+%26+Eatery,+Civil+Lines&shndl=30&source=sh/x/loc/act/m1/4&kgs=ad1dd531368bcc49",
+                "mocha cafe":"https://www.google.com/search?client=ms-android-oppo-rvo3&sca_esv=b96c0f9f157b9df3&cs=1&hl=en-GB&output=search&kgmid=/g/1hm3f3l7y&q=Mocha+Cafe+%26+Bar&shndl=30&source=sh/x/loc/act/m1/4&kgs=b6f162d65165b222",
+                "backyard cafe":"https://www.zomato.com/nagpur/222-backyard-dharampeth",
+            };
+    
+            // Check if the entered café exists
+            if (cafes[query]) {
+                window.location.href = cafes[query]; // Redirect to the matched page
+            } else {
+                alert("Café not found! Please try again.");
+            }
+        }
+    </script>
+    
+   <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2>Welcome to Nagpur's Best Cafe</h2>
+        <p>Your perfect guide</p>
+        <a href="#menu" class="cta-btn">Explore Nagpur's Cafe</a>
+    </div>
+</section>
+
+<style>
+.hero {
+    background-image: url('index_img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Ensures text is readable */
+}
+.hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Adds a slight overlay for better readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+</style>
+
+
+  <!-- Menu Section -->
+<section id="menu" class="menu">
+    <h2 style="background-color: rgb(255, 172, 127); height: 50px; text-align: center;">.... Our Special Cafe ....</h2>
+       <br>
+    <div class="container">
+         <div class="menu-items">
+            <!-- First Menu Item: Link to farzi.html -->
+            <a href="farzi1.html" class="menu-item">
+                <img src="photos/farzi.jpg" alt="Classic Coffee">
+                <h3>FARZI CAFE</h3>
+                <p>Its modern Indian bistro that blends traditional flavors with contemporary culinary techniques, offering a unique fusion dining experience..</p>
+            </a>
+            <!-- Other menu items -->
+            <a href="loc1.html" class="menu-item">
+                <img src="loc.jpg" alt="Chocolate Cake">
+                <h3>LOC</h3>
+                <p>Life of Chai is a cozy café offering a variety of handcrafted teas, snacks, and a warm ambiance for tea lovers.</p>
+            </a>
+            <a href="hitchki1.html" class="menu-item">
+                <img src="photos/hitchki.jpg" alt="Pastries">
+                <h3>HITCHKI</h3>
+                <p>Hitchki Nagpur is a Bollywood-themed resto-bar offering innovative fusion cuisine and artisanal cocktails in a vibrant atmosphere.</p>
+            </a>
+            <a href="dabo1.html" class="menu-item">
+                <img src="photos/dabo.jpg" alt="Pastries">
+                <h3>DABO</h3>
+                <p>Dabo Club and Kitchen in Nagpur is a vibrant nightlife destination featuring a spacious dance floor, diverse music genres, and a lively atmosphere..</p>
+            </a>
+            <a href="bellabrew1.html" class="menu-item">
+                <img src="photos/bella brew.jpg" alt="Bella Brew">
+                <h3>BELLA BREW</h3>
+                <p>Bella Brew in Nagpur offers a variety of continental dishes in a cozy café setting.</p>
+            </a>
+        </div>
+    </div>
+    
+</section>
+<br>
+<h2 style="font-size: 50px;">CUISINES</h2><HR><HR><BR>
+    <div class="container" style="height: 220px;">
+        <div class="box">
+            <img src="photos/slide2.jpg" alt="Coffee">
+            <div class="overlay">
+                <h3>Indian Thali</h3>
+                <p>Puri, roti, chole, kachori, chwal, sabji.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="photos/slide1.jpg" alt="Dessert">
+            <div class="overlay">
+                <h3>Steam Momos</h3>
+                <p>Mix flour and water for dough, prepare a veggie filling with soy sauce, wrap in dumpling shapes, steam for 10-12 minutes, and serve with chutney..</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="photos/slide3.jpg" alt="Cafe Ambience">
+            <div class="overlay">
+                <h3>Pancakes</h3>
+                <p> Mix flour, eggs, milk, sugar, and baking powder into a smooth batter, cook on a greased pan until golden brown, and serve with syrup.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="photos/slide4.jpg" alt="Cafe Ambience">
+            <div class="overlay">
+                <h3>Spaghetti with Meatballs</h3>
+                <p>Mix ground meat with breadcrumbs, eggs, and spices, shape into balls, cook in a rich tomato sauce, and serve over boiled spaghetti with fresh herbs.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="photos/slide5.jpg" alt="Cafe Ambience">
+            <div class="overlay">
+                <h3>Pani Puri</h3>
+                <p>A popular Indian street snack consisting of crispy hollow balls filled with spicy, tangy water, mashed potatoes, and chickpeas.
+                </p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="photos/slide6.jpg" alt="Cafe Ambience">
+            <div class="overlay">
+                <h3>Cheeseburger</h3>
+                <p>A classic American burger with a juicy beef patty, lettuce, tomatoes, cheese, and sauce, all inside a sesame seed bun.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="photos/slide7.jpg" alt="Cafe Ambience">
+            <div class="overlay">
+                <h3>Burrito</h3>
+                <p> A Mexican dish made with a soft flour tortilla wrapped around a filling of seasoned ground meat, lettuce, tomatoes, and other toppings.
+
+                </p>
+            </div>
+        </div>
+        
+
+        <div class="box">
+            <img src="photos/slide8.jpg" alt="Specialty Drinks">
+            <div class="overlay">
+                <h3>Crispy Chicken</h3>
+                <p>Marinate chicken in buttermilk, coat with seasoned flour, and deep-fry until golden brown and crispy.
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="box">
+            <img src="photos/slide9.jpg" alt="Coffee">
+            <div class="overlay">
+                <h3>Grilled Sandwich</h3>
+                <p>A crispy and cheesy sandwich filled with vegetables, grilled to perfection, served with chips and ketchup.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="photos/slide10.jpg" alt="Dessert">
+            <div class="overlay">
+                <h3> Chicken Biryani</h3>
+                <p>A fragrant and spiced rice dish with marinated chicken, layered with flavorful basmati rice and garnished with herbs.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="photos/slide11.jpg" alt="Cafe Ambience">
+            <div class="overlay">
+                <h3> Sushi Roll</h3>
+                <p> A Japanese delicacy made with sushi rice, raw fish, avocado, and wrapped in seaweed, topped with sauces and garnishes.                </p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="photos/slide12.jpg" alt="Cafe Ambience">
+            <div class="overlay">
+                <h3>Crispy Fried Chicken
+                </h3>
+                <p>Coat chicken drumsticks in seasoned flour, dip in buttermilk, re-coat with flour, and deep-fry until golden and crispy.
+                </p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="photos/slide13.jpg" alt="Cafe Ambience">
+            <div class="overlay">
+                <h3>Paneer Tikka Skewers </h3>
+                <p>Marinate Paneer pieces with yogurt, spices, and lemon juice, then grill or roast on skewers until charred and cooked. </p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="photos/slide14.jpg" alt="Cafe Ambience">
+            <div class="overlay">
+                <h3>Fried Momos</h3>
+                <p>Mix flour and water for dough, prepare a veggie filling with soy sauce, wrap in dumpling shapes, steam for 10-12 minutes, and serve with chutney..</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="photos/sapnis.jpg" alt="Cafe Ambience">
+            <div class="overlay">
+                <h3>Seafood Paella</h3>
+                <p> A traditional Spanish rice dish cooked with seafood, vegetables, and saffron-infused broth for a rich and flavorful experience.</p>
+            </div>
+        </div>
+        
+
+        <div class="box">
+            <img src="photos/italian.jpg" alt="Specialty Drinks">
+            <div class="overlay">
+                <h3>Teriyaki Chicken Noodles</h3>
+                <p>A delicious Asian stir-fry dish featuring noodles, tender chicken, vegetables, and a sweet-savory teriyaki sauce.</p>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<hr><hr>
+
+<!-- Image Container -->
+<section class="iii">
+    <h1 style="text-decoration: underline; font-size: 50px;margin-bottom: 50px;">You May Also Like!!!</h1>
+
+<!-- Image Container -->
+<div class="image-container">
+    <!-- First Image with Link -->
+    <div class="image-item">
+        <a href="https://linktr.ee/littleowlcafe" class="image-link" target="_blank">
+            <img src="photos/littilowl.jpg" alt="Cafe 1">
+        </a>
+        <p class="image-info">Little Owl Cafe</p> <!-- Information below the image -->
+    </div>
+    <!-- Second Image with Link -->
+    <div class="image-item">
+        <a href="https://g.co/kgs/m48RV3J" class="image-link" target="_blank">
+            <img src="photos/villa167.jpg" alt="Cafe 2">
+        </a>
+        <p class="image-info">Villa 167</p> <!-- Information below the image -->
+    </div>
+    <!-- Third Image with Link -->
+    <div class="image-item">
+        <a href="https://cocktailsandsocials.com/" class="image-link" target="_blank">
+            <img src="photos/coso.jpg" alt="Cafe 3">
+        </a>
+        <p class="image-info">Cocktails & Socials</p> <!-- Information below the image -->
+    </div>
+</div>
+<br>
+<div class="image-container">
+    <!-- First Image with Link -->
+    <div class="image-item">
+        <a href="https://g.co/kgs/C7tkNbG" class="image-link" target="_blank">
+            <img src="photos/turkish.jpg" alt="Cafe 1">
+        </a>
+        <p class="image-info">Turkish Cafe</p> <!-- Information below the image -->
+    </div>
+    <!-- Second Image with Link -->
+    <div class="image-item">
+        <a href="https://g.co/kgs/H9LJ2qb" class="image-link" target="_blank">
+            <img src="photos/ohno.jpg" alt="Cafe 2">
+        </a>
+        <p class="image-info">Oh No Cafe</p> <!-- Information below the image -->
+    </div>
+    <!-- Third Image with Link -->
+    <div class="image-item">
+        <a href="https://thebelgianwaffle.co/" class="image-link" target="_blank">
+            <img src="photos/belgian.jpg" alt="Cafe 3">
+        </a>
+        <p class="image-info">The Belgian Waffle</p> <!-- Information below the image -->
+    </div>
+</div>
+<br>
+<div class="image-container">
+    <!-- First Image with Link -->
+    <div class="image-item">
+        <a href="https://raastanagpur.com/" class="image-link" target="_blank">
+            <img src="photos/raasta.jpg" alt="Cafe 1">
+        </a>
+        <p class="image-info">Raasta Cafe</p> <!-- Information below the image -->
+    </div>
+    <!-- Second Image with Link -->
+    <div class="image-item">
+        <a href="https://www.barbequenation.com/restaurants/nagpur/eternity-mall?utm_source=GMB&utm_medium=nagpur_eternity_mall&utm_campaign=GMB_nagpur_eternity_mall" class="image-link" target="_blank">
+            <img src="photos/barbeque.jpg" alt="Cafe 2">
+        </a>
+        <p class="image-info">Barbeque Nation</p> <!-- Information below the image -->
+    </div>
+    <!-- Third Image with Link -->
+    <div class="image-item">
+        <a href="https://tsb-stores.starbucksindia.net/starbucks-dharampeth-coffee-shop-shivaji-nagar-nagpur-283382/Home?utm_source=locator&utm_medium=googleplaces" class="image-link" target="_blank">
+            <img src="photos/starbucks.jpg" alt="Cafe 3">
+        </a>
+        <p class="image-info">Starbucks</p> <!-- Information below the image -->
+    </div>
+</div>
+<br>
+<div class="image-container">
+    <!-- First Image with Link -->
+    <div class="image-item">
+        <a href="https://g.co/kgs/pnHKAcM" class="image-link" target="_blank">
+            <img src="photos/threebeans.jpg" alt="Cafe 1">
+        </a>
+        <p class="image-info">Three Beans</p> <!-- Information below the image -->
+    </div>
+    <!-- Second Image with Link -->
+    <div class="image-item">
+        <a href="https://g.co/kgs/9oNpHcz" class="image-link" target="_blank">
+            <img src="photos/mocha.jpg" alt="Cafe 2">
+        </a>
+        <p class="image-info">Mocha Cafe</p> <!-- Information below the image -->
+    </div>
+    <!-- Third Image with Link -->
+    <div class="image-item">
+        <a href="https://g.co/kgs/RNi5vKt" class="image-link" target="_blank">
+            <img src="photos/backyard.jpg" alt="Cafe 3">
+        </a>
+        <p class="image-info">Backyard Cafe</p> <!-- Information below the image -->
+    </div>
+</div>
+</section>
+<br><br>
+<hr>
+    <hr>
+      <!-- About us -->
+<section class="about-section1" style="background-color:  #f2c94c;" >
+    <div class="container1"style="width: 100%; height: 300px;">
+        <h2 style="font-size: 36px; text-decoration: underline ;"> About Us!....</h2>
+        <p style="font-size: 22px;">
+            Welcome to Nagpur’s Best Café, where every sip and bite is an experience! Nestled in the heart of Orange City, we offer a cozy ambiance, handcrafted coffee, and delectable desserts made from the finest ingredients. Whether you're here for a quick caffeine fix, a relaxed work session, or a soulful escape, our café is designed to make you feel at home. We also host live music, poetry nights, and art showcases, creating a vibrant community space. Come, unwind, and indulge in the finest café experience Nagpur has to offer!
+            Nestled in the heart of *Orange City*, Nagpur’s Best Café is more than just a coffee shop—it’s an experience!  
+            With *aromatic brews, handcrafted delicacies, and a warm, inviting ambiance*, we offer the perfect spot to relax,  
+            work, or catch up with friends. Every cup is crafted with passion, every dish is made with love,  
+            and every visit leaves you with memories to cherish.  
+        </p>
+      
+
+      
+
+    </div>
+</section>
+<hr>
+<hr>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>☕ Nagpur's Best Café</h2>
+                <p>Experience the taste of freshly brewed coffee and delicious bites in the heart of Nagpur.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Nagpur, Maharashtra</p>
+                <p><i class="fas fa-phone"></i> +91 7350969785</p>
+                <p><i class="fas fa-envelope"></i> info@nagpurcafe.com</p>
+                
+                <form class="newsletter">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="follow-us">
+            <h2>Follow Us</h2>
+            <a href="https://www.instagram.com/cafe_ngp" target="_blank">
+                <i class="fab fa-instagram"></i> 
+                <img src="photos/tw.jpg" alt="" height="30px">
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Nagpur's Best Café | Designed with ❤️</p>
+        </div>
+    </footer>
+
+</body>
+</html>

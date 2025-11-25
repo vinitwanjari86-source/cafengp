@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farzi Cafe</title>
+    <link rel="stylesheet" href="css/farzi.css">
+    <link rel="stylesheet" href="js/farzi.js">
+</head>
+<body>
+
+    
+    
+ <!-- Menu Section -->
+ <h2 style="color: black;text-align: center; font-size: 50px;">Our Special Menu</h2><hr><hr>
+
+ <div style="height: 700px;" class="menu-container">
+    <!-- Menu cards -->
+    <div style="border: 4px solid black;width: 500px; height: 500px;"class="menu-card" onclick="openPopup(this)">
+        <img src="photos/hitchkimenu1.jpg" alt="Card 1">
+    </div>
+    <div style="border: 4px solid black; width: 500px; height: 500px;"class="menu-card" onclick="openPopup(this)">
+        <img src="photos/hitchkimenu2.jpg" alt="Card 2">
+    </div>
+</div>
+</script>
+
+<!-- Back Button -->
+<div style="text-align: center; margin-top: 20px;">
+   <button onclick="goBack()" style="padding: 10px 20px; font-size: 20px; cursor: pointer;">Back</button>
+</div>
+
+<script>
+   // Function to open the popup
+   function openPopup(card) {
+       var imageSrc = card.querySelector('img').src;
+       document.getElementById("popup-img").src = imageSrc;
+       document.getElementById("popup-modal").style.display = "flex";
+   }
+
+   // Function to close the popup
+   function closePopup() {
+       document.getElementById("popup-modal").style.display = "none";
+   }
+
+   // Function to go back to loc1.html
+   function goBack() {
+       window.location.href = "hitchki1.html";
+   }
+</script>
+</body>
+</html>

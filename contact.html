@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="contact.php">
+</head>
+<body>
+    <div class="container">
+        <h2>Give Your Feedback</h2>
+        <form action="backend.php" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Feedback</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+              <!-- Back Button -->
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="goBack()" style="padding: 10px 20px; font-size: 20px; cursor: pointer;">Back</button>
+    </div>
+
+    <script>
+        // Function to open the popup
+        function openPopup(card) {
+            var imageSrc = card.querySelector('img').src;
+            document.getElementById("popup-img").src = imageSrc;
+            document.getElementById("popup-modal").style.display = "flex";
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById("popup-modal").style.display = "none";
+        }
+
+        // Function to go back to loc1.html
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+        </form>
+    </div>
+</body>
+</html>

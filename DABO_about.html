@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nagpur's Best Café</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f5f2;
+            color: #d01111;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #1c4003c9, #f4b400);
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        .about-section h2 {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-section p {
+            font-size: 18px;
+            color: #fff;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+
+        .about-icons {
+            margin-top: 20px;
+        }
+
+        .about-icons i {
+            font-size: 28px;
+            color: #fff;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .about-icons i:hover {
+            transform: scale(1.2);
+        }
+
+        .about-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="about-section">
+        <h2>☕ Welcome to Our Café ☕</h2>
+        <p>
+
+            Dabo Club and Kitchen, guests are immediately enveloped in an atmosphere that artfully combines modern sophistication with inviting warmth. The interior design showcases contemporary aesthetics, featuring sleek lines, ambient lighting, and thoughtfully curated decor elements that contribute to a chic yet comfortable setting. The spacious layout accommodates both intimate gatherings and larger celebrations, ensuring a versatile environment suitable for various occasions.
+
+            Beverage Selection
+            
+            Complementing the culinary offerings is an extensive beverage menu that includes a well-curated selection of wines, spirits, and innovative cocktails. The bar staff is adept at crafting both classic and contemporary concoctions, ensuring that each drink enhances the overall dining experience.
+            
+            
+        </p><br>
+            
+           <p>Entertainment and Events
+
+            Dabo Club and Kitchen is not just a place to dine; it's a hub of entertainment. The establishment frequently hosts live music performances, DJ nights, and themed events that infuse energy and excitement into the atmosphere. These events have made it a popular spot for those looking to unwind after a long day or celebrate special occasions in style.
+            </p><br>
+            
+           
+            
+           <p> Customer Testimonials
+
+            The positive reception from patrons speaks volumes about the establishment's dedication to quality and service. One guest noted, "The food here is simply amazing, and combined with the perfect and soothing ambiance, you will have the time of your life." Another patron praised the venue for its excellent event organization, stating, "Had a wonderful event organized by the Dabo team. Special thanks to Jay for working every minute detail and giving a memorable experience." </p><br>
+            
+           <p> Operational Details
+            
+            Address: 6, New Manish Nagar, Somalwada, Nagpur, Maharashtra 440025
+            
+            Operating Hours: Open daily from 4:00 PM to 1:30 AM
+            
+            Contact Information: For reservations and inquiries, guests can contact the establishment at +91 8884477702. 
+            
+             </p><br>
+            
+            
+        
+        <div class="about-icons">
+            <i class="fas fa-coffee"></i>
+            <i class="fas fa-cookie-bite"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+                     <!-- Back Button -->
+                     <div style="text-align: center; margin-top: 20px;">
+                        <button onclick="goBack()" style="padding: 10px 20px; font-size: 20px; cursor: pointer;">Back</button>
+                    </div>
+                  
+                    <script>
+                        // Function to open the popup
+                        function openPopup(card) {
+                            var imageSrc = card.querySelector('img').src;
+                            document.getElementById("popup-img").src = imageSrc;
+                            document.getElementById("popup-modal").style.display = "flex";
+                        }
+                  
+                        // Function to close the popup
+                        function closePopup() {
+                            document.getElementById("popup-modal").style.display = "none";
+                        }
+                  
+                        // Function to go back to loc1.html
+                        function goBack() {
+                            window.location.href = "dabo1.html";
+                        }
+                    </script>
+    
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farzi Cafe</title>
+    <link rel="stylesheet" href="css/loc.css">
+</head>
+<body>
+
+   
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+       
+            <div class="menu-items">
+                <!-- Menu Items -->
+                <div class="menu-item">
+                    <img src="photos/loc1.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/loc2.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/loc3.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/loc4.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/loc5.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/loc6.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/loc7.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/loc8.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="photos/loc9.jpg" alt="Classic Coffee">
+                      </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    
+   
+</div>
+
+<!-- Popup Modal -->
+<div class="popup-modal" id="popup-modal">
+    <button class="close-btn" onclick="closePopup()">×</button>
+    <img id="popup-img" src="" alt="Popup Image">
+</div>
+
+<script>
+    // Function to open the popup
+    function openPopup(card) {
+        // Get the image source from the clicked card
+        var imageSrc = card.querySelector('img').src;
+        // Set the popup image source
+        document.getElementById("popup-img").src = imageSrc;
+        // Display the popup modal
+        document.getElementById("popup-modal").style.display = "flex";
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById("popup-modal").style.display = "none";
+    }
+</script>
+
+
+
+      
+
+      
+
+    </div>
+</section>
+<hr>
+<hr>
+<div style="text-align: center; margin-top: 20px;">
+    <button onclick="goBack()" style="padding: 10px 20px; font-size: 20px; cursor: pointer;">Back</button>
+</div>
+<script>
+   
+    function goBack() {
+        window.location.href = "loc1.html";
+    }
+</script>
+</body>
+</html>
